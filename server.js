@@ -14,7 +14,7 @@ res.send('relevant error message');
 app.listen(3000)
 console.log('app running on port ', 3000);
 
-import Reflection from 'ReflectionController1.js';
+import Reflection from './src/controllers/Reflection';
 
 app.post('/api/v1/reflections', Reflection.create);
 app.get('/api/v1/reflections', Reflection.getAll);
